@@ -37,7 +37,7 @@ li {
     padding: 5% 10%;
     justify-content: space-between;
     background-color: darkblue;
-    gap: 12px;
+    gap: 1px;
     flex-wrap: wrap;
 }
 
@@ -45,6 +45,7 @@ li {
     display: flex;
     flex-direction: column;
     flex: 1.3 0 350px;
+    max-width: 800px;
     border: 2px solid pink;
     gap: 15px;
 }
@@ -57,11 +58,14 @@ li {
 
 .sign-up {
     max-width: 100px;
+    max-height: 25px;
+    align-items: center;
 }
 
 .image1 {
     flex-basis: 500px;
     height: 250px;
+    max-width: 500px;
     flex-grow: 1;
     background-color: gray;
     border: 2px solid black;
@@ -75,6 +79,7 @@ li {
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    border: 2px solid brown;
 }
 
  .image-panes {
@@ -82,6 +87,7 @@ li {
     justify-content: space-evenly;
     border: 2px solid black;
     flex-wrap: wrap;
+    margin-bottom: 20px;
     
  }
 
@@ -90,20 +96,66 @@ li {
     padding: 10px 20px;
     font-weight: 400;
     font-size: larger;
+    background-color: orange;
+}
+
+.pane {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    justify-content: center;
+    align-content: center;
+    flex-grow: 0;
+    flex-basis: 200px;
+    margin: 5px 5px;
+}
+
+.text {
+    text-align: center; 
+}
+ .img {
+    height: 200px;
     max-height : 200px;
     width : 200px;
-    border: 2px solid blue;
-    border-radius: 10%;
-    margin: 10px 5px;
+    border: 5px solid blue;
+    border-radius: 14%;
  }
+
+
+
 
   /*----------content-testimonial------------*/
 
  .content-testimonial {
-    padding: 2% 10%;
+    padding: 2% 20%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     background-color: gray;
   }
+
+  .authorq {
+    text-align: right;
+  }
+
+  /*----------content-signup------------*/
+
+.content-signup {
+    padding: 2% 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid gray;
+}
+
+  /*----------footer-----------*/
+
+  .footer {
+    padding: 20px 20px;
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    background-color: darkblue;
+}
